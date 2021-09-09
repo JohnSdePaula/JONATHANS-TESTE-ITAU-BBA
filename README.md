@@ -3,10 +3,14 @@
 > JONATHAN SANTOS 
 
 ## COMPLEMENTARES ##
->    "cep-promise": "^4.1.0", // PARA O CEP;
+>    cep-promise "^4.1.0" // PARA O CEP
+>    
 >    "ngx-mask": "^12.0.0", // MASCARAR COMPOS DE DADOS;
+>    
 >    "ngx-toastr": "^13.2.1",  //NOTIFICAÇÕES;
+>    
 >    "@angular/material": "^11.2.13", //INTERFACE;
+>    
 >    "lodash": "^4.17.21", // DESEMPENHO;
 
 ## PARA EXECUTAR ##
