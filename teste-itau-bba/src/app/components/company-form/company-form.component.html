@@ -1,0 +1,52 @@
+<div class="container">
+    <form [formGroup]="form">
+        <div class="row">
+            <!--Modulo Componente CEP em Shared-->
+            <app-cep
+                [cep]="cep"
+                (formCep)="handleCep($event)">
+            </app-cep>
+    
+            <mat-card-subtitle style="display: block;">Detalhes da Empresa</mat-card-subtitle>
+            <!-- Formulario recebendo dados -->
+            <mat-form-field appearance="outline">
+                <mat-label>Nome</mat-label>
+                <input matInput formControlName="name" name="name">
+                <mat-error *ngIf="form.controls.name.invalid">Informe Nome</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Business</mat-label>
+                <input matInput formControlName="business" name="business">
+                <mat-error *ngIf="form.controls.business.invalid">Informe  Business</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Valuation</mat-label>
+                <input type="text" matInput formControlName="valuation" appCurrency>
+                <mat-error *ngIf="form.controls.valuation.invalid">Informe valuation!</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>CNPJ</mat-label>
+                <input matInput formControlName="cnpj" name="cnpj" mask="00.000.000/0000-00">
+                <mat-error *ngIf="form.controls.cnpj.invalid">Informe CNPJ</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Ativo?</mat-label>
+                <mat-select formControlName="active">
+                  <mat-option [value]='true'>Sim</mat-option>
+                  <mat-option [value]='false'>Não</mat-option>
+                </mat-select>
+              </mat-form-field>
+    
+        </div>
+    
+        <div class="buttons">
+            <button mat-button (click)="back()" class="btn-itau-bba-gray">Voltar</button>
+            <button mat-button (click)="handleSubmit()" class="btn-itau-bba-orange">Salvar</button>
+        </div>
+    
+    </form>
+</div>

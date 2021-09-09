@@ -1,0 +1,70 @@
+@import '../../../../variables'
+    
+.header
+    display: grid
+    grid-area: header
+    grid-template-columns: 1fr auto
+    align-items: center
+    background: $ITAU_BG_ORANGE
+    height: 100px
+    border-bottom: solid 2.5px $ITAU_BUTTON_ORANGE
+    &__logo
+        max-height: 50px
+    & span
+        padding-left: 12vh
+
+.header a
+    display: flex
+    align-items: center
+    text-decoration: none
+
+.header a img
+    cursor: pointer
+
+.header nav
+    padding-right: 40px
+
+.header nav ul
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+
+.language
+    font-size: 15px
+    padding-right: 20px
+
+.language:after
+    content: ''
+    border-inline-end: solid 1px $ITAU_BLACK
+    padding: 15px 0 15px 20px
+
+.photo-container
+    display: flex
+    flex-wrap: nowrap
+    &::after
+        content: '⌄'
+        font-size: 15px
+        margin-left: 10px
+        cursor: pointer
+
+.photo
+    background-color: $ITAU_BLACK
+    vertical-align: middle
+    width: 35px
+    height: 35px
+    border-radius: 50%
+
+.user small
+    display: block
+    padding-left: 10px
+    margin-bottom: -7px
+
+.user .user-name
+    font-weight: bold
+
+.user .user-office
+    opacity: 70%
+
+.arrow
+    font-size: 2vh
+    
