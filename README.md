@@ -3,7 +3,7 @@
 > JONATHAN SANTOS 
 
 ## COMPLEMENTARES ##
->    cep-promise "^4.1.0" // PARA O CEP
+>   "cep-promise"; "^4.1.0", // PARA O CEP
 >    
 >    "ngx-mask": "^12.0.0", // MASCARAR COMPOS DE DADOS;
 >    
