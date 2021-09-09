@@ -14,7 +14,7 @@
 >    "lodash": "^4.17.21", // DESEMPENHO;
 
 ## PARA EXECUTAR ##
-Via terminalm estando na pasta do projeto,instalar as dependências:
+Via terminal estando na pasta do projeto,instalar as dependências:
 > npm install 
 
 Para rodar o programa:
